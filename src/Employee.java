@@ -1,6 +1,6 @@
 public class Employee {
     private int id;
-    private static int counter;
+    private static int counter = 1;
     private String firstName;
     private String lastName;
     private String middleName;
@@ -17,22 +17,38 @@ public class Employee {
         this.department = department;
         this.salary = salary;
     }
-    public int getId() {return this.id;}
 
-    public String getFirstName() {return firstName;}
+    public int getId() {
+        return this.id;
+    }
 
-    public String getLastName() {return lastName;}
+    public String getFirstName() {
+        return firstName;
+    }
 
-    public String getMiddleName() {return middleName;}
+    public String getLastName() {
+        return lastName;
+    }
 
-    public String getDepartment() {return department;}
+    public String getMiddleName() {
+        return middleName;
+    }
 
-    public double getSalary() {return salary;}
+    public String getDepartment() {
+        return department;
+    }
 
-    public void setDepartment(String department) {this.department = department;}
+    public double getSalary() {
+        return salary;
+    }
 
-    public void setSalary(double salary) {this.salary = salary;}
+    public void setDepartment(String department) {
+        this.department = department;
+    }
 
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
 
 
     @Override
